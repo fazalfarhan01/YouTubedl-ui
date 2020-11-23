@@ -14,6 +14,8 @@
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	<script src="assets\js\change-download-options.js"></script>
+	<script type="text/javascript" src="/eel.js"></script>
+	<script src="assets/js/misc-functions.js"></script>
 </head>
 
 <body class="is-preload">
@@ -97,17 +99,8 @@
 				<hr />
 
 				<!-- Preformatted Code -->
-				<h2>Process</h2>
-				<pre><code>i = 0;
-
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';
-</code></pre>
+				<h2>Progress</h2>
+				<pre><code id="stdout-from-python"></code></pre>
 
 			</section>
 
