@@ -1,7 +1,7 @@
 # YouTubedl-ui
 This repo is for designing a gui for YouTubeDL
 
-Check Out the [Releases](./releases)
+Check Out the [Releases](https://github.com/fazalfarhan01/YouTubedl-ui/releases)
 
 Run the following commands in ___Powershell Admin___ to get started on windows
 
