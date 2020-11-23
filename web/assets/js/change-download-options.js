@@ -42,8 +42,8 @@ function changeOptions(value) {
         format1.value = "mp3";
 
         var format2 = document.getElementById("media-format-2");
-        format2.innerText = "m4v";
-        format2.value = "m4v";
+        format2.innerText = "m4a";
+        format2.value = "m4a";
 
         var format3 = document.getElementById("media-format-3");
         format3.innerText = "ogg";
