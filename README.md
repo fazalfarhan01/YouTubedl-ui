@@ -1,6 +1,8 @@
 # YouTubedl-ui
 This repo is for designing a gui for YouTubeDL
 
+Check Out the [Releases](./releases)
+
 Run the following commands in ___Powershell Admin___ to get started on windows
 
 ```POWERSHELL
@@ -21,8 +23,7 @@ Then to run the program, run the following command
 python main.py
 ```
 
-### Note: As of now.. only the gui is partially ready... Backend is yet to be prepared
-
+### Note: As of now.. The GUI and YouTubeDL are properly integrated and the default download directory is the Downloads Folder.
 To Compile and obtain the exe file, run the following
 ```POWERSHELL
 python -m eel main.py web --onefile -w --icon=web\images\favicon.ico
