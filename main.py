@@ -37,7 +37,7 @@ def my_hook(d):
 def processData(data):
     # print(data)
     parameters = {
-        "ffmpeg_location": r"C:\Modules\YouTube-dl\ffmpeg.exe",
+        "ffmpeg_location": "./bin",
         "verbose": False,
         "forcefilename": True,
         "simulate": False,
