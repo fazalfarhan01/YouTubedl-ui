@@ -3,15 +3,15 @@ function changeOptions(value) {
     {
         var option1 = document.getElementById("media-quality-1");
         option1.innerText = "480p";
-        option1.value = "480p";
+        option1.value = "480";
 
         var option2 = document.getElementById("media-quality-2");
         option2.innerText = "720p";
-        option2.value = "720p";
+        option2.value = "720";
 
         var option3 = document.getElementById("media-quality-3");
         option3.innerText = "1080p";
-        option3.value = "1080p";
+        option3.value = "1080";
 
         var format1 = document.getElementById("media-format-1");
         format1.innerText = "mp4";

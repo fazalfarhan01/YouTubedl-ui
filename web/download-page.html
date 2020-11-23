@@ -16,6 +16,8 @@
 	<script src="assets\js\change-download-options.js"></script>
 	<script type="text/javascript" src="/eel.js"></script>
 	<script src="assets/js/misc-functions.js"></script>
+	<script src="assets/js/nprogress.js"></script>
+	<link rel="stylesheet" href="assets/css/nprogress.css">nk
 </head>
 
 <body class="is-preload">
@@ -52,7 +54,7 @@
 			<!-- Post -->
 			<section class="post">
 				<header class="major">
-					<h1>Paste the video URL<br />
+					<h1 id="mainHeading">Paste the video URL<br />
 						below </h1>
 				</header>
 
@@ -83,9 +85,9 @@
 						<!-- Break -->
 						<div class="col-12">
 							<select name="mediaQuality" id="mediaQuality">
-								<option value="360p" id="media-quality-1">360p</option>
-								<option value="720p" id="media-quality-2">720p</option>
-								<option value="1080p" id="media-quality-3">1080p</option>
+								<option value="360" id="media-quality-1">360p</option>
+								<option value="720" id="media-quality-2">720p</option>
+								<option value="1080" id="media-quality-3">1080p</option>
 							</select>
 						</div>
 						<!-- Break -->
@@ -118,8 +120,8 @@
 				<hr />
 
 				<!-- Preformatted Code -->
-				<h2>Progress</h2>
-				<pre><code id="stdout-from-python"></code></pre>
+				<!-- <h2>Progress</h2>
+				<pre><code id="stdout-from-python"></code></pre> -->
 
 			</section>
 
