@@ -60,39 +60,58 @@
 				<h3><a href="http://ytdl-org.github.io/youtube-dl/supportedsites.html">List of Supported Websites</a>
 				</h3>
 
-				<form method="post" action="#">
+				<form id="downloadForm">
 					<div class="row gtr-uniform">
 						<div class="col-12 col-12-xsmall">
-							<input type="text" name="demo-name" id="demo-name" value="" placeholder="URL" />
+							<input type="text" name="mediaUrl" id="mediaUrl" placeholder="URL" />
 						</div>
 						<!-- Break -->
 						<div class="col-12">
-							<select name="demo-category" id="demo-category" onchange="changeOptions(this.value)">
-								<option value="0">Video Download</option>
-								<option value="1">Audio Download</option>
+							<select name="downloadType" id="downloadType" onchange="changeOptions(this.value)">
+								<option value="video">Video Download</option>
+								<option value="audio">Audio Download</option>
 							</select>
 						</div>
 						<!-- Break -->
-						<div class="col-4 col-12-small">
-							<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-							<label for="demo-priority-low" id="select-quality-1">480p</label>
+						<div class="col-12">
+							<select name="mediaFormat" id="mediaFormat">
+								<option value="mp4" id="media-format-1">mp4</option>
+								<option value="mkv" id="media-format-2">mkv</option>
+								<option value="avi" id="media-format-3">avi</option>
+							</select>
 						</div>
-						<div class="col-4 col-12-small">
-							<input type="radio" id="demo-priority-normal" name="demo-priority">
-							<label for="demo-priority-normal" id="select-quality-2">720p</label>
+						<!-- Break -->
+						<div class="col-12">
+							<select name="mediaQuality" id="mediaQuality">
+								<option value="low" id="media-quality-1">360p</option>
+								<option value="medium" id="media-quality-2">720p</option>
+								<option value="high" id="media-quality-3">1080p</option>
+							</select>
 						</div>
-						<div class="col-4 col-12-small">
-							<input type="radio" id="demo-priority-high" name="demo-priority">
-							<label for="demo-priority-high" id="select-quality-3">1080p</label>
-						</div>
+						<!-- Break -->
+						<!-- <div id="quality">
+							<div class="col-4 col-12-small">
+								<input type="radio" id="mediaQuality-low" name="mediaQuality" checked>
+								<label for="mediaQuality-low" id="select-quality-1">480p</label>
+							</div>
+							<div class="col-4 col-12-small">
+								<input type="radio" id="mediaQuality-medium" name="mediaQuality">
+								<label for="mediaQuality-medium" id="select-quality-2">720p</label>
+							</div>
+							<div class="col-4 col-12-small">
+								<input type="radio" id="mediaQuality-high" name="mediaQuality">
+								<label for="mediaQuality-high" id="select-quality-3">1080p</label>
+							</div>
+						</div> -->
 
 						<!-- Break -->
 						<div class="col-12">
 							<ul class="actions">
-								<li><input type="submit" value="Send Message" class="primary" /></li>
+								<li><input type="button" onclick="sendDataToPython()" value="Download" class="primary" /></li>
 								<li><input type="reset" value="Reset" /></li>
 							</ul>
 						</div>
+
 					</div>
 				</form>
 
@@ -117,12 +136,12 @@
 				<section>
 					<h3>Phone</h3>
 					<p><a href="tel:+919731265150">+91 9731 265 150</a></p>
-					<p><a href="tel:+919731265150">+91 Sumanth Add Your Phone Numebr</a></p>
+					<p><a href="tel:+917795865462">+91 7795 865 462</a></p>
 				</section>
 				<section>
 					<h3>Email</h3>
 					<p><a href="mailto:fazal.farhan@gmail.com">fazal.farhan@gmail.com</a></p>
-					<p><a href="mailto:fazal.farhan@gmail.com">Sumanth Add your mail here</a></p>
+					<p><a href="mailto:sumanthprabhu2000@gmail.com">sumanthprabhu2000@gmail.com</a></p>
 				</section>
 				<section>
 					<h3>Social</h3>
