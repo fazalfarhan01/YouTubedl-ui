@@ -3,37 +3,51 @@ function changeOptions(value) {
     {
         var option1 = document.getElementById("media-quality-1");
         option1.innerText = "480p";
+        option1.value = "480p";
 
         var option2 = document.getElementById("media-quality-2");
         option2.innerText = "720p";
+        option2.value = "720p";
 
         var option3 = document.getElementById("media-quality-3");
         option3.innerText = "1080p";
+        option3.value = "1080p";
 
         var format1 = document.getElementById("media-format-1");
         format1.innerText = "mp4";
+        format1.value = "mp4";
+
         var format2 = document.getElementById("media-format-2");
         format2.innerText = "mkv";
+        format2.value = "mkv";
+
         var format3 = document.getElementById("media-format-3");
         format3.innerText = "avi";
+        format3.value = "avi";
     } else {
         var option1 = document.getElementById("media-quality-1");
         option1.innerText = "128 kbps";
+        option1.value = "128";
 
         var option2 = document.getElementById("media-quality-2");
         option2.innerText = "256 kbps";
+        option2.value = "256";
 
         var option3 = document.getElementById("media-quality-3");
         option3.innerText = "320 kbps";
+        option3.value = "320";
 
         var format1 = document.getElementById("media-format-1");
         format1.innerText = "mp3";
+        format1.value = "mp3";
 
         var format2 = document.getElementById("media-format-2");
         format2.innerText = "m4v";
+        format2.value = "m4v";
 
         var format3 = document.getElementById("media-format-3");
-        format1.innerText = "ogg";
+        format3.innerText = "ogg";
+        format3.value = "ogg";
     }
 }
 
@@ -41,10 +55,14 @@ function changeOptions(value) {
 function sendDataToPython() {
     validateForm();
     htmlForm = document.getElementById("downloadForm");
-    console.log(htmlForm.elements.mediaUrl.value);
-    console.log(htmlForm.elements.mediaFormat.value);
-    console.log(htmlForm.elements.downloadType.value);
-    console.log(htmlForm.elements.mediaQuality.value);
+    var dataToSend = {
+        "url": htmlForm.elements.mediaUrl.value,
+        "mediaType": htmlForm.elements.downloadType.value,
+        "format": htmlForm.elements.mediaFormat.value,
+        "quality": htmlForm.elements.mediaQuality.value,
+    }
+    console.log(dataToSend);
+    eel.processData(dataToSend);
 }
 
 function validateForm() {

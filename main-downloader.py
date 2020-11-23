@@ -1,7 +1,7 @@
 from youtube_dl import YoutubeDL
 
 parameters = {
-    "verbose": True,
+    "verbose": False,
     "forcefilename": True,
     # "simulate": True,
     # "writethumbnail": True,
@@ -10,20 +10,6 @@ parameters = {
     "outtmpl":"%(title)s-%(release_year)s.%(ext)s",
     "format": 'bestvideo+bestaudio/best',
 }
-
-"""
-Available Audio Formats
-mp3
-m4a
-ogg
-"""
-
-"""
-Available Video Formats
-mp4
-mkv
-avi
-"""
 
 if "audio" in parameters.get("format") and "video" not in parameters.get("format"):
     # To download audios in 'mp3' format only
