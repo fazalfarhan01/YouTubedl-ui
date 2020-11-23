@@ -4,15 +4,16 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html lang="en">
 	<head>
 		<title>Massively by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src=".\assets\js\update-dates.js"></script>
 	</head>
-	<body class="is-preload">
+	<body class="is-preload" onload="updateDate()">
 
 		<!-- Wrapper -->
 			<div id="wrapper" class="fade-in">
@@ -53,7 +54,7 @@
 						<!-- Featured Post -->
 							<article class="post featured">
 								<header class="major">
-									<span class="date">April 25, 2017</span>
+									<span class="date" id="current-date">April 25, 2017</span>
 									<h2><a href="#">And this is a<br />
 									massive headline</a></h2>
 									<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
