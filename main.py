@@ -1,5 +1,9 @@
 from __future__ import unicode_literals
 
+import os
+userName = os.getlogin()
+downloadsPath = os.path.join("C:/Users/"+userName+"/Downloads/")
+
 import eel
 import youtube_dl
 
@@ -43,7 +47,7 @@ def processData(data):
         "simulate": False,
         "noplaylist": True,
         "prefer_ffmpeg": True,
-        "outtmpl": "%(title)s-%(release_year)s.%(ext)s",
+        "outtmpl": downloadsPath+"%(title)s-%(release_year)s.%(ext)s",
         'logger': MyLogger(),
         'progress_hooks': [my_hook],
     }

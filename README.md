@@ -22,3 +22,8 @@ python main.py
 ```
 
 ### Note: As of now.. only the gui is partially ready... Backend is yet to be prepared
+
+To Compile and obtain the exe file, run the following
+```POWERSHELL
+python -m eel main.py web --onefile -w --icon=web\images\favicon.ico
+```
