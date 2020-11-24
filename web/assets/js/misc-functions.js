@@ -1,8 +1,11 @@
 eel.expose(printStdout);
 function printStdout(standardOutput) {
-    var currentContent = document.getElementById("stdout-from-python");
-    // currentContent.innerText = (currentContent.innerText + standardOutput);
     console.log(standardOutput);
+    if (standardOutput.startsWith("ERROR")) {
+        document.getElementById("errorBlock").style.display = "block";
+        currentCode = document.getElementById("errorCode").innerHTML;
+        document.getElementById("errorCode").innerHTML = currentCode + "\n" + standardOutput;
+    }
 }
 
 eel.expose(setDownloadPercent);
